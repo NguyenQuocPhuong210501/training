@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-clor: Gray;
+    --black: black;
+    --bg: black;
+    --border: .1rem solid rgba(255,255,255,.3);
+
+
+
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s linear;
+
+}
+html{
+    font-size: 75.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+body{
+    background: var(--bg);
+
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+
+}
+.header .logo img{
+    height: 6rem;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff; 
+
+}
+.header .navbar a:hover{
+    color:var(--main-clor);
+    border-bottom: .1rem solid var(--main-clor);
+    padding-bottom: .5rem;
+}
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.0rem;
+    margin-left: 1rem;
+}
+.header .icons div:hover{
+    color: var(--main);
+}
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top: 115%; right: 7%;
+    background: #fff;
+    width: 40rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size:  1.6rem;
+    color: var(--black);
+    padding: 0.5rem;
+    text-transform: none;
+}
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color:var(--black);
+}
+.header .search-form label:hover{
+    color: var(--main-clor);
+
+}
+
